@@ -163,7 +163,7 @@ a {
 
 		margin-bottom: 50px;
 
-		a {
+		.mailus {
 			display: inline-block;
 			padding: 15px 40px;
 			margin-bottom: 20px;
@@ -178,17 +178,23 @@ a {
 		}
 
 		&-msg {
+			position: relative;
 			max-width: 120px;
 			margin-left: auto;
 			margin-right: auto;
 
 			& div {
+				position: absolute;
 				display: none;
 				font-family: Space Mono;
 				font-size: 14px;
 				line-height: 16px;
 				text-transform: lowercase;
 				color: #A8DA68;
+
+				a {
+					color: #A8DA68;
+				}
 			}
 		}
 	}
@@ -337,21 +343,22 @@ a {
 .popups {
 
 	&--item {
-		// display: none;
 		position: absolute;
 		width: 300px;
 		height: 400px;
 		top: -2px;
-		left: 50%;
+		left: -150%;
 		padding: 0 18px 0;
 		transform: translateX(-50%);
 		background-color: #fff;
 		box-shadow: 0px 2px 82px 0px rgba(0,0,0,0.50);
 		box-sizing: border-box;
 		background-image: url('@{imgPath}/popup-bg.jpg');
+		transition: 0.3s;
 
-		&:nth-child(5) {
-			z-index: 10;
+
+		&.active {
+			left: 50%;
 		}
 	}
 
