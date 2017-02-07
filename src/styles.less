@@ -311,6 +311,10 @@ a {
 		}
 
 	}
+
+	&--link {
+		color: @color__link;
+	}
 }
 
 .info-random {
@@ -330,11 +334,17 @@ a {
 	&-active {
 		display: block;
 
-		span {
-			font-family: Camcorder Inverse;
-			font-style: normal;
-			color: #A8DA68;
-		}
+	}
+
+	&--link {
+		font-family: Camcorder Inverse;
+		text-transform: none;
+		font-style: normal;
+		color: @color__link;
+	}
+
+	&--link-simple {
+		font-family: Space Mono;
 	}
 }
 
@@ -382,7 +392,7 @@ a {
 
 	&--carousel-dots {
 		position: absolute;
-		width: 50px;
+		// width: 50px;
 		height: 8px;
 		top: 47%;
 		left: 50%;
@@ -468,7 +478,7 @@ a {
 		h4 {
 			margin: 0;
 			font-family: Bungee;
-			font-size: 32px;
+			font-size: 17px;
 			line-height: 35px;
 			text-align: center;
 		}
@@ -758,7 +768,6 @@ a {
 
 		&--carousel-dots {
 			position: absolute;
-			width: 50px;
 			height: 8px;
 			top: 46%;
 
@@ -1035,7 +1044,6 @@ a {
 
 		&--carousel-dots {
 			position: absolute;
-			width: 50px;
 			height: 8px;
 			top: 46%;
 
