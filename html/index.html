@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>OCC</title>
+	<title>Online Cookie Collective</title>
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="assets/css/styles.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
@@ -19,32 +19,29 @@
 
 		<ul class="dropdown-menu--list">
 			<li class="dropdown-menu--item">
-				<span class="navlink">Wat</span>
+				<span class="navlink" data-link="#wat">Wat</span>
 			</li>
 			<li class="dropdown-menu--item">
-				<span class="navlink">WIE</span>
+				<span class="navlink" data-link="#wie">WIE</span>
 			</li>
 			<li class="dropdown-menu--item">
-				<span class="navlink">CONCEpt</span>
+				<span class="navlink" data-link="#concept">CONCEpt</span>
 			</li>
 			<li class="dropdown-menu--item">
-				<span class="navlink">bereik</span>
+				<span class="navlink" data-link="#bereik">bereik</span>
 			</li>
 			<li class="dropdown-menu--item">
-				<span class="navlink">ons NETWERK</span>
+				<span class="navlink" data-link="#netwerk">ons NETWERK</span>
 			</li>
 			<li class="dropdown-menu--item">
-				<span class="navlink">PRODUCTIE</span>
+				<span class="navlink" data-link="#productie">PRODUCTIE</span>
 			</li>
 		</ul>
 
 		<div class="dropdown-menu--random">
-			<a href="">MAIL ONS</a>
+			<a href="#" class="mailus">MAIL ONS</a>
 			<div class="dropdown-menu--random-msg">
-				<div class="msg-active">BETTER CALL SOMEBODY ELSE</div>
-				<div>BETTER not to CALL SOMEBODY ELSE</div>
-				<div>SOMEBODY ELSE</div>
-				<div>some text here</div>
+				<div><a href="mailto:info@occ.social">info@occ.social</a></div>
 			</div>
 		</div>
 
@@ -73,22 +70,22 @@
 	<nav class="nav">
 		<ul class="nav--list">
 			<li class="nav--item">
-				<span class="nav--link navlink">Wat</span>
+				<span class="nav--link navlink" data-link="#wat">Wat</span>
 			</li>
 			<li class="nav--item">
-				<span class="nav--link navlink">WIE</span>
+				<span class="nav--link navlink" data-link="#wie">WIE</span>
 			</li>
 			<li class="nav--item">
-				<span class="nav--link navlink">CONCEpt</span>
+				<span class="nav--link navlink" data-link="#concept">CONCEpt</span>
 			</li>
 			<li class="nav--item">
-				<span class="nav--link navlink">bereik</span>
+				<span class="nav--link navlink" data-link="#bereik">bereik</span>
 			</li>
 			<li class="nav--item">
-				<span class="nav--link navlink">ons NETWERK</span>
+				<span class="nav--link navlink" data-link="#netwerk">ons NETWERK</span>
 			</li>
 			<li class="nav--item">
-				<span class="nav--link navlink">PRODUCTIE</span>
+				<span class="nav--link navlink" data-link="#productie">PRODUCTIE</span>
 			</li>
 		</ul>
 	</nav>
@@ -97,7 +94,7 @@
 		<article>
 
 			<section class="popups">
-				<div class="popups--item">
+				<div class="popups--item" id="wat">
 					<span class="popups--close close"></span>
 					<h3 class="popups--title">wat</h3>
 					<div class="popups--carousel-video">
@@ -182,7 +179,7 @@
 					<div class="popups--carousel-dots"></div>
 				</div>
 
-				<div class="popups--item">
+				<div class="popups--item" id="wie">
 					<span class="popups--close close"></span>
 					<h3 class="popups--title">WIE</h3>
 					<p class="popups--text">
@@ -245,7 +242,7 @@
 
 				</div>
 
-				<div class="popups--item">
+				<div class="popups--item" id="concept">
 					<span class="popups--close close"></span>
 					<h3 class="popups--title">concept</h3>
 					<p class="popups--text">
@@ -256,7 +253,7 @@
 					</p>
 				</div>
 				
-				<div class="popups--item">
+				<div class="popups--item" id="bereik">
 					<span class="popups--close close"></span>
 					<h3 class="popups--title">bereik</h3>
 					<p class="popups--text">
@@ -272,7 +269,7 @@
 						<a href="" class="popups--link">inkopen</a>, maar veel leuker is het om gewoon iets heel goeds te maken. Als de kijkers dan vanzelf komen vieren we een feestje.
 					</p>
 				</div>
-				<div class="popups--item">
+				<div class="popups--item" id="netwerk">
 					<span class="popups--close close"></span>
 					<h3 class="popups--title">ONS NETWERK</h3>
 					<p class="popups--text">
@@ -285,7 +282,7 @@
 						Ken je <a href="" class="popups--link">Dylan Haegens</a>? Meer dan één miljoen abonnees op YouTube kennen hem heel goed. En wij ook. En daarnaast nog honderden anderen <a href="" class="popups--link">YouTube sterren</a>, <a href="" class="popups--link">Facebook grootheden</a>, <a href="" class="popups--link">Instagram helden</a>. Je noemt het en wij regelen het.
 					</p>
 				</div>
-				<div class="popups--item">
+				<div class="popups--item" id="productie">
 					<span class="popups--close close"></span>
 					<h3 class="popups--title">productie</h3>
 					<p class="popups--text">
@@ -326,11 +323,11 @@
 		</article>
 
 		<section class="info-random">
-			<div class="info-random--item info-random-active">
+			<div class="info-random--item">
 				Er zijn op dit moment <span>15 000 000</span> mensen social bezig in Nederland.
 			</div>
 			<div class="info-random--item">
-				Another text <span>15 000</span> mensen social bezig in Nederland.
+				Another text <span>15 000</span> mensen social bezig<br> in Nederland.
 			</div>
 			<div class="info-random--item">
 				A new text <span> 1 000</span> mensen social bezig in Nederland.
