@@ -101,7 +101,7 @@ mailUs.onclick = function(e) {
 //Random message
 var randomMessage = document.querySelectorAll('.info-random--item');
 
-randomMessage[random(0, randomMessage.length)].classList.add('info-random-active');
+randomMessage[random(0, randomMessage.length - 1)].classList.add('info-random-active');
 
 function random(min, max) {
 	return Math.floor(min + Math.random() * (max - min + 1));
